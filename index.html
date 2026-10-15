@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEasy - Car Rental System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav>
+    <div class="logo">DriveEasy</div>
+
+    <div class="nav-links">
+      <a href="#cars">Cars</a>
+      <a href="#booking">Book Now</a>
+    </div>
+  </nav>
+
+  <div class="hero-content">
+
+    <div>
+      <p class="tag">ACADEMIC CAR RENTAL SYSTEM</p>
+
+      <h1>Rent Your Perfect Car</h1>
+
+      <p>
+        Choose a vehicle, enter your details,
+        and book your rental easily.
+      </p>
+
+      <a class="btn" href="#booking">Start Booking</a>
+    </div>
+
+    <div class="hero-card">
+      <span>🚗</span>
+      <h3>Simple & Fast Rental</h3>
+      <p>Affordable cars for your daily travel.</p>
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+
+<section id="cars" class="section">
+
+  <div class="section-title">
+    <p class="tag">OUR VEHICLES</p>
+    <h2>Select a Car</h2>
+  </div>
+
+  <div class="cars">
+
+    <article class="car-card">
+      <div class="car-img kia">KIA</div>
+      <h3>KIA</h3>
+      <p>Comfortable family car</p>
+      <strong>₹1000 / day</strong>
+
+      <button class="select-btn"
+              data-car="KIA"
+              data-price="1000">
+        Select
+      </button>
+    </article>
+
+
+    <article class="car-card">
+      <div class="car-img hyundai">HYUNDAI</div>
+      <h3>Hyundai</h3>
+      <p>Stylish and reliable</p>
+      <strong>₹1500 / day</strong>
+
+      <button class="select-btn"
+              data-car="Hyundai"
+              data-price="1500">
+        Select
+      </button>
+    </article>
+
+
+    <article class="car-card">
+      <div class="car-img mahindra">MAHINDRA</div>
+      <h3>Mahindra</h3>
+      <p>Powerful and spacious</p>
+      <strong>₹2000 / day</strong>
+
+      <button class="select-btn"
+              data-car="Mahindra"
+              data-price="2000">
+        Select
+      </button>
+    </article>
+
+
+    <article class="car-card">
+      <div class="car-img toyota">TOYOTA</div>
+      <h3>Toyota</h3>
+      <p>Premium travel experience</p>
+      <strong>₹2500 / day</strong>
+
+      <button class="select-btn"
+              data-car="Toyota"
+              data-price="2500">
+        Select
+      </button>
+    </article>
+
+  </div>
+</section>
+
+
+<section id="booking" class="section booking-section">
+
+  <div class="section-title">
+    <p class="tag">RENTAL FORM</p>
+    <h2>Book Your Car</h2>
+  </div>
+
+
+  <form id="bookingForm" class="booking-form">
+
+    <div class="form-grid">
+
+      <label>
+        Customer Name
+        <input id="name"
+               type="text"
+               placeholder="Enter your name">
+      </label>
+
+
+      <label>
+        Email
+        <input id="email"
+               type="email"
+               placeholder="Enter your email">
+      </label>
+
+
+      <label>
+        Phone Number
+        <input id="phone"
+               type="tel"
+               placeholder="Enter phone number">
+      </label>
+
+
+      <label>
+        Select Car
+
+        <select id="car">
+
+          <option value="">
+            -- Choose a car --
+          </option>
+
+          <option value="KIA" data-price="1000">
+            KIA - ₹1000/day
+          </option>
+
+          <option value="Hyundai" data-price="1500">
+            Hyundai - ₹1500/day
+          </option>
+
+          <option value="Mahindra" data-price="2000">
+            Mahindra - ₹2000/day
+          </option>
+
+          <option value="Toyota" data-price="2500">
+            Toyota - ₹2500/day
+          </option>
+
+        </select>
+      </label>
+
+
+      <label>
+        Pickup Date
+        <input id="pickup" type="date">
+      </label>
+
+
+      <label>
+        Rental Days
+        <input id="days"
+               type="number"
+               min="1"
+               value="1">
+      </label>
+
+    </div>
+
+
+    <div class="summary">
+
+      <span>Estimated Total</span>
+
+      <strong id="total">
+        ₹0
+      </strong>
+
+    </div>
+
+
+    <p id="message" class="message"></p>
+
+
+    <button class="btn submit" type="submit">
+      Confirm Rental
+    </button>
+
+  </form>
+
+</section>
+
+</main>
+
+
+<footer>
+  © 2026 DriveEasy Car Rental System |
+  Academic Project
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

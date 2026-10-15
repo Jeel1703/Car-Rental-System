@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #182230;
+  background: #f6f8fb;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #10243e, #1f5f91);
+  color: white;
+  padding: 22px 7% 70px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #4d9dff;
+  margin-bottom: 8px;
+}
+
+.hero .tag {
+  color: #9ed0ff;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero p:not(.tag) {
+  font-size: 18px;
+  color: #dce9f5;
+  max-width: 600px;
+}
+
+
+/* BUTTON */
+
+.btn {
+  display: inline-block;
+  background: #1f8fff;
+  color: white;
+  border: 0;
+
+  padding: 13px 22px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  margin-top: 24px;
+
+  cursor: pointer;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+  background: rgba(255,255,255,.12);
+
+  border: 1px solid rgba(255,255,255,.2);
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  backdrop-filter: blur(5px);
+}
+
+.hero-card span {
+  font-size: 75px;
+}
+
+.hero-card h3 {
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+
+/* SECTION */
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 65px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+}
+
+
+/* CARS */
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.car-card {
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 15px;
+
+  box-shadow:
+    0 7px 25px rgba(30,50,70,.08);
+}
+
+.car-img {
+  height: 145px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  font-weight: 900;
+
+  color: white;
+}
+
+.kia {
+  background: linear-gradient(135deg,#24364f,#60758e);
+}
+
+.hyundai {
+  background: linear-gradient(135deg,#1a6b73,#42a8a1);
+}
+
+.mahindra {
+  background: linear-gradient(135deg,#573d87,#a072d0);
+}
+
+.toyota {
+  background: linear-gradient(135deg,#a15a32,#dc9b57);
+}
+
+.car-card h3 {
+  font-size: 21px;
+  margin-top: 14px;
+}
+
+.car-card p {
+  color: #687585;
+  margin: 3px 0 8px;
+}
+
+.car-card strong {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.select-btn {
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #1f8fff;
+
+  background: white;
+
+  color: #1675d1;
+
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.select-btn:hover {
+  background: #1f8fff;
+  color: white;
+}
+
+
+/* BOOKING */
+
+.booking-form {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 7px 25px rgba(30,50,70,.08);
+}
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input,
+select {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 7px;
+
+  padding: 12px;
+
+  border: 1px solid #ccd5df;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #b7ddff;
+  border-color: #1f8fff;
+}
+
+
+/* TOTAL */
+
+.summary {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 25px;
+
+  padding: 18px;
+
+  background: #f0f6fc;
+
+  border-radius: 10px;
+}
+
+.summary strong {
+  font-size: 24px;
+  color: #1474cc;
+}
+
+.message {
+  min-height: 24px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+
+  padding: 25px;
+
+  background: #10243e;
+
+  color: #dbe8f5;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+
+  .cars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width:550px) {
+
+  .cars,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
